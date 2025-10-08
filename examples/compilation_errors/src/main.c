@@ -6,11 +6,15 @@
 #include "pico/stdlib.h"
 #include "pico/stdio.h"
 
+#include "FreeRTOS.h"
+#include "task.h"
+
 
 #define TEMP_MIN        0
 #define TEMP_MAX        40
 #define LUX_MIN         100
 #define LUX_MAX         1500
+#define BUFFER_SIZE     256
 
 static volatile int temp; 
 static volatile int lux;

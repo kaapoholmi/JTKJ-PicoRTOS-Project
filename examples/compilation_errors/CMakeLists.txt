@@ -1,3 +1,4 @@
+
 set(DEFAULT_TARGET compilation_error)
 
 add_executable(${DEFAULT_TARGET}
